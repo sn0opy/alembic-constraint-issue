@@ -1,0 +1,23 @@
+[project]
+name = "alembic-constraint-issue"
+version = "0.1.0"
+description = "demo project for alembic #1195"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "alembic==1.15.1",
+    "sqlmodel==0.0.23",
+]
+
+[tool.ruff]
+line-length = 120
+fix = true
+
+[tool.ruff.format]
+preview = false
+
+[tool.ruff.lint]
+preview = false
+select = ["E", "W", "F", "I", "B", "C4", "UP"]
+# https://docs.astral.sh/ruff/formatter/#conflicting-lint-rules
+ignore = ["W191", "E111", "E114", "E117", "D206", "D300", "Q000", "Q001", "Q002", "Q003", "COM812", "COM819"]
