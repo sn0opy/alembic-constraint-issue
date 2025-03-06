@@ -5,8 +5,7 @@ See title
 ## State
 
 The project is in a state that now expects the user to create a new alembic revision for a change in the user model.
-Migrations are applied automatically while running `main.py`. Doing so will result in an exception due to the following
-exception:
+Migrations are applied automatically while running `main.py`. Doing so will result in in the following exception:
 
 ```plain
 [...]alembic/operations/batch.py", line 670, in add_constraint
